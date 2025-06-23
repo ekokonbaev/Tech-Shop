@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTerminator - Магазин технологий будущего</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="cyber-overlay"></div>
+    
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo-text">
+                <span class="cyber-text">TechTerminator</span>
+                <span class="terminator-text">Магазин технологий будущего</span>
+            </div>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="cyber-grid"></div>
+        <div class="hero-content">
+            <h1 class="cyber-title">TechTerminator</h1>
+            <p class="cyber-subtitle">Технологии будущего уже сегодня</p>
+            <button class="cyber-button">Смотреть каталог</button>
+        </div>
+    </section>
+
+    <section class="featured">
+        <div class="section-header">
+            <h2>Популярные товары</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active">Все</button>
+                <button class="filter-btn">Компьютеры</button>
+                <button class="filter-btn">Гаджеты</button>
+                <button class="filter-btn">Аксессуары</button>
+            </div>
+        </div>
+        <div class="products-grid">
+            <div class="product-card" data-category="компьютеры">
+                <img src="img/pc.png" alt="Игровой компьютер">
+                <div class="product-info">
+                    <h3>CyberPC Pro</h3>
+                    <p class="description">Мощный игровой компьютер с RGB-подсветкой</p>
+                    <div class="specs">
+                        <div class="spec-item">
+                            <i class="fas fa-microchip"></i>
+                            <span>Процессор: Intel Core i9-13900K</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-memory"></i>
+                            <span>RAM: 32GB DDR5</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-hdd"></i>
+                            <span>SSD: 2TB NVMe</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-desktop"></i>
+                            <span>Видеокарта: RTX 4090</span>
+                        </div>
+                    </div>
+                    <p class="price">149 999 СОМ</p>
+                    <button class="cyber-button">В корзину</button>
+                </div>
+            </div>
+            <div class="product-card" data-category="гаджеты">
+                <img src="img/71.jpg" alt="Смартфон">
+                <div class="product-info">
+                    <h3>NeoPhone X</h3>
+                    <p class="description">Смартфон с голографическим дисплеем</p>
+                    <div class="specs">
+                        <div class="spec-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Экран: 6.7" AMOLED 120Hz</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-battery-full"></i>
+                            <span>Батарея: 5000 мАч</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-camera"></i>
+                            <span>Камера: 108MP + 12MP + 12MP</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-microchip"></i>
+                            <span>Процессор: Snapdragon 8 Gen 2</span>
+                        </div>
+                    </div>
+                    <p class="price">89 999 СОМ</p>
+                    <button class="cyber-button">В корзину</button>
+                </div>
+            </div>
+            <div class="product-card" data-category="аксессуары">
+                <img src="img/nsh.jpg" alt="Наушники">
+                <div class="product-info">
+                    <h3>CyberSound Pro</h3>
+                    <p class="description">Беспроводные наушники с шумоподавлением</p>
+                    <div class="specs">
+                        <div class="spec-item">
+                            <i class="fas fa-volume-up"></i>
+                            <span>Звук: 40мм динамики</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-battery-three-quarters"></i>
+                            <span>Батарея: 30 часов</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-bluetooth"></i>
+                            <span>Bluetooth 5.2</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Шумоподавление: -40dB</span>
+                        </div>
+                    </div>
+                    <p class="price">24 999 СОМ</p>
+                    <button class="cyber-button">В корзину</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories">
+        <h2>Категории</h2>
+        <div class="categories-grid">
+            <div class="category-card">
+                <i class="fas fa-laptop cyber-icon"></i>
+                <h3>Компьютеры</h3>
+                <p>Мощные системы для работы и игр</p>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-mobile-alt cyber-icon"></i>
+                <h3>Смартфоны</h3>
+                <p>Инновационные устройства связи</p>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-headphones cyber-icon"></i>
+                <h3>Аудио</h3>
+                <p>Продвинутые аудио решения</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal">
+        <div class="cyber-modal">
+            <span class="close-modal">&times;</span>
+            <h2>Корзина</h2>
+            <div class="cart-items">
+                <!-- Здесь будут товары в корзине -->
+            </div>
+            <div class="cart-total">
+                <p>Итого: <span>0 ₽</span></p>
+                <button class="cyber-button">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>О нас</h3>
+                <p>TechTerminator - ваш проводник в мир технологий будущего</p>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p>Email: info@techterminator.ru</p>
+                <p>Телефон: +7 (999) 123-45-67</p>
+            </div>
+            <div class="footer-section">
+                <h3>Социальные сети</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TechTerminator. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
